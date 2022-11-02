@@ -1,0 +1,23 @@
+default:
+    formatters:
+        pretty: true
+    autoload:
+        - %paths.base%/tests/contexts
+    suites:
+        ui:
+            paths: [ %paths.base%/tests/features ]
+            contexts: [ UserInterfaceContext ]
+            # filters: { tags: '@ui' }
+        domain:
+            paths: [ %paths.base%/tests/features ]
+            contexts: [ DomainContext ]
+            filters: { tags: '@domain' }
+    extensions:
+        Behat\MinkExtension:
+            selenium2:
+                browser: phantomjs
+            base_url: http://pim.soprema.local
+            show_cmd: vivaldi %s
+    gherkin:
+        filters:
+            tags: "~@wip"

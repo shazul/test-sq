@@ -1,0 +1,1 @@
+Authorization: Bearer JSON_WEB_TOKEN

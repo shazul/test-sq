@@ -1,0 +1,306 @@
+body {
+    font-family: "Fira Sans",sans-serif;
+}
+
+.input-list {
+    margin-bottom: 10px;
+}
+
+.form-group > .input-list:last-of-type {
+    margin-bottom: 0;
+}
+
+.table > tbody > tr > td.table-btn {
+    padding: 0 8px;
+    min-width: 120px;
+}
+
+.table.table-with-buttons > tbody > tr > td {
+    line-height: 1;
+}
+
+abbr.label {
+    border-bottom: 0;
+}
+
+.label {
+    &.label-A {
+        background-color: #a776d0;
+    }
+
+    &.label-wet_areas {
+        background-color: #a776d0;
+    }
+
+    &.label-F {
+        background-color: #78b0d0;
+    }
+
+    &.label-L {
+        background-color: #6cd08f;
+    }
+
+    &.label-P {
+        background-color: #cdd078;
+    }
+
+    &.label-C {
+        background-color: #d0816e;
+    }
+
+    &.label-O {
+        background-color: #d074ad;
+    }
+
+    &.label-roofs {
+        background-color: #4c38d0;
+    }
+
+    &.label-foundations {
+        background-color: #78b0d0;
+    }
+
+    &.label-terraces_and_podiums {
+        background-color: #78b0d0;
+    }
+
+    &.label-walls {
+        background-color: #6cd08f;
+    }
+
+    &.label-bridges {
+        background-color: #cdd078;
+    }
+
+    &.label-parking_decks {
+        background-color: #d0816e;
+    }
+
+    &.label-balconies_and_plaza_decks {
+        background-color: #d074ad;
+    }
+
+    &.label-sub_structures {
+        background-color: #d074ad;
+    }
+
+    &.label-fountains_and_ponds {
+        background-color: #32a2d0;
+    }
+
+    &.label-water_retaining_structures {
+        background-color: #32a2d0;
+    }
+
+    &.label-indoor_applications {
+        background-color: #57d0c5;
+    }
+
+    &.label-water_features {
+        background-color: #57d0c5;
+    }
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail img {
+    width: 200px;
+}
+
+[v-cloak] {
+    /**  The v-cloak attribute hides Vue.js elements until they are parsed to prevent displaying code **/
+    display: none !important;
+}
+
+nav.navbar-static-top {
+    p.current-company {
+        display:inline-block;
+        padding:15px;
+        margin:0;
+        font-size:1.1em;
+        color:white;
+        float: left;
+        font-weight: bold;
+    }
+}
+
+ul.navbar-nav {
+    div.dropdown-language, div.dropdown-company {
+        position: relative;
+        float: left;
+
+        button.dropdown-toggle {
+            padding: 15px;
+            border-radius: 0;
+
+            .fa-globe, .fa-building {
+                font-size: 1.3em;
+                padding-right: 10px;
+            }
+
+            ul.dropdown-menu{
+                background-color: #108dcd;
+
+                li {
+                    background-color: #108dcd;
+                }
+            }
+        }
+    }
+}
+
+// Specific style for benefits in "edit parent product" template
+div.data-group {
+    display:block;
+    div.data-group-container{
+        width:50%;
+        div.data-container{
+            height:35px;
+            input{
+                width:90%;
+                margin-right:5px;
+            }
+
+            span.delete-data{
+                cursor: pointer;
+
+                i.fa-trash{
+                    padding-top:10px;
+                }
+            }
+        }
+    }
+    .btn-add-data{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+// Specific style for image , images , file, files
+div.saved-file{
+    span.delete-file{
+        margin-left:20px;
+        i.fa-trash{
+            font-size:25px;
+            cursor:pointer;
+        }
+    }
+
+    p.filename{
+        font-size:16px;
+        font-weight: bold;
+        padding-left:10px;
+    }
+}
+
+div.unit-container{
+    width:100%;
+    div.input-group{
+        width:98%;
+        float:left;
+        display:block;
+
+        div.input-container{
+            float:left;
+            width:50%;
+
+            .radio-preferred{
+                margin-top: 10px;
+                width: 5%;
+                float: left;
+            }
+
+            .unit-format{
+                width: 80%;
+                float: left;
+            }
+
+            .input-group-addon{
+                padding-top: 9px;
+                padding-bottom: 9px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    form {
+        div.unit-container {
+            width: 100%;
+            div.input-group {
+                width: 100%;
+                display: block;
+
+                div.input-container {
+                    float: none;
+                    width: 100%;
+                    margin-bottom:10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 360px){
+    div.box-body {
+        form {
+            div.unit-container {
+                div.input-group {
+                    div.input-container {
+                        .unit-format {
+                            width: 70% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.animated-fast {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.inline-control {
+    float: left;
+    width: 99%;
+}
+
+.inline-delete {
+    color: red;
+    display: block;
+    font-size: 22px;
+    position: absolute;
+    right: 12px;
+}
+

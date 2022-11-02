@@ -1,0 +1,138 @@
+<?php
+
+return [
+    'confirm'        => [
+        'body' => 'Are you sure you want to delete the attribute ":name"?',
+    ],
+    'deleted'        => 'The attribute ":name" has been deleted successfully.',
+    'index'          => [
+        'required'    => 'Required',
+        'title'       => 'Listing of attributes',
+        'description' => [
+            'system' => 'System',
+        ],
+        'table'       => [
+            'header' => [
+                'name'    => 'Name',
+                'type'    => 'Type',
+                'natures' => 'Natures',
+                'actions' => 'Actions',
+            ],
+            'search' => 'Search',
+            'show'   => 'Show',
+            'edit'   => 'Edit',
+            'delete' => 'Delete',
+        ],
+        'create'      => 'Create a new attribute',
+    ],
+    'edit'           => [
+        'default_choice' => 'Choose an attribute to add',
+        'description'    => 'Edit attribute',
+        'form'           => [
+            'delete-image' => 'Delete the image',
+            'label'        => 'Label',
+            'name'         => 'Name',
+            'type'         => 'Type',
+            'select-type'  => 'Select a type',
+            'company'      => 'Company',
+            'natures'      => 'Natures',
+            'building_components' => 'Building components',
+            'types'        => [
+                'choice' => 'Choice :number',
+            ],
+        ],
+        'confirmation'   => [
+            'body'  => 'Editing this attribute will DELETE the attribute from :nombre product. Are you sure?
+                |Editing this attribute will DELETE the attribute from :nombre products. Are you sure?',
+            'title' => 'Confirm attribute edition',
+        ],
+        'save'           => 'Save',
+        'cancel'         => 'Cancel',
+        'delete'         => 'Delete',
+        'saved'          => 'The attribute has been saved successfully.',
+    ],
+    'create'         => [
+        'title'       => 'Create a new attribute',
+        'description' => [
+            'detail'             => 'Detail',
+            'product'            => 'Product',
+            'specification'      => 'Specification',
+            'system'             => 'System',
+            'technical_bulletin' => 'Technical Bulletin',
+        ],
+        'form' => [
+            'label'               => 'Label',
+            'type'                => 'Type',
+            'natures'             => 'Natures',
+            'building_components' => 'Building components',
+            'select-type'         => 'Select a type',
+            'types'               => [
+                'choice' => 'Choice {{ $index + 1 }}',
+                'add'    => 'Add a choice',
+                'remove' => 'Delete',
+            ],
+        ],
+        'save'        => 'Create',
+        'cancel'      => 'Cancel',
+        'saved'       => 'The attribute has been created successfully.',
+    ],
+    'show'           => [
+        'title'       => 'Attribute',
+        'description' => 'Attribute information',
+        'form'        => [
+            'label'                        => 'Label',
+            'name'                         => 'Name',
+            'type'                         => 'Type',
+            'company'                      => 'Company',
+            'natures'                      => 'Natures',
+            'model-type'                   => 'Model\'s type',
+            'system-type'                  => 'System\'s type',
+            'has-value'                    => 'Value',
+            'has-value-checkbox'           => 'Does it have a value?',
+            'is-parent-attribute'          => 'Parent attribute',
+            'is-parent-attribute-checkbox' => 'Is it a parent attribute?',
+            'building_components'          => 'Building components'
+        ],
+        'back'        => 'Back',
+        'edit'        => 'Edit',
+        'delete'      => 'Delete',
+    ],
+    'systems'        => [
+        'default'           => 'Global',
+        'roof_system'       => 'Roofing',
+        'plaza_deck_system' => 'Plaza Deck',
+        'wall_system'       => 'Walls',
+        'waterproofing'     => 'Waterproofing',
+        'foundation_system' => 'Foundation',
+        'parking_system'    => 'Parking',
+        'bridge_system'     => 'Bridge',
+        'balcony_system'    => 'Balcony',
+        'fountains_system'  => 'Fountains and ponds'
+    ],
+    'models'         => [
+        'child_product'      => 'Child Product',
+        'detail'             => 'Detail',
+        'parent_product'     => 'Parent Product',
+        'specification'      => 'Specification',
+        'system'             => 'System',
+        'technical_bulletin' => 'Technical Bulletin',
+    ],
+    'natures'        => [
+        'A' => 'Other',
+        'F' => 'Sheet',
+        'L' => 'Liquid',
+        'P' => 'Panel',
+        'C' => 'Complementary',
+        'O' => 'Tools',
+    ],
+    'natures-short'  => [
+        'A' => 'O',
+        'F' => 'S',
+        'L' => 'L',
+        'P' => 'P',
+        'C' => 'C',
+        'O' => 'T',
+    ],
+    'add'            => 'Add',
+    'default_choice' => 'Choose a value',
+];

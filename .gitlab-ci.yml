@@ -1,0 +1,5 @@
+code_sniffer:
+  script:
+    - composer cs
+  tags:
+    - phpcs

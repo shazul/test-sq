@@ -1,0 +1,12 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+_ide_helper.php
+.idea
+public/js/
+public/css/
+public/exportation/*
+!public/exportation/.gitkeep
+files

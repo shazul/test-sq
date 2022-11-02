@@ -1,0 +1,39 @@
+FORMAT: 1A
+HOST: {{ route('api.blueprint') }}
+
+# Soprema's API
+
+This API offer an access in read-only to the companies, products and all related information.
+The login route is {{ route('api.auth') }} and takes 2 param in the body: email and password.
+This route will return the json web token to be used in all requests.
+
+
+::: note
+## Request requirements
+Every request must contains the following headers:
+
+```http
+<!-- include(partials/requests/headers/_version.md) -->
+<!-- include(partials/requests/headers/_auth_all_access.md) -->
+```
+:::
+
+::: warning
+## Rate Limit
+The API has a rate limit of **60** requests per minute.
+:::
+
+
+<!-- include(partials/_companies.md) -->
+
+<!-- include(partials/_products.md) -->
+
+<!-- include(partials/_systems.md) -->
+
+<!-- include(partials/_details.md) -->
+
+<!-- include(partials/_specifications.md) -->
+
+<!-- include(partials/_technical-bulletins.md) -->
+
+<!-- include(partials/_languages.md) -->

@@ -1,0 +1,1 @@
+Accept: application/vnd.soprema.v1+json
