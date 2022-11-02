@@ -49,7 +49,7 @@ class Kernel extends ConsoleKernel
         Commands\SystemImportation\BridgeSystemImport::class,
         Commands\SystemImportation\ParkingSystemImport::class,
 
-        Commands\HubSpotIndexer::class,
+        //Commands\HubSpotIndexer::class,
 
         Commands\PublishDraftsChilds::class,
 

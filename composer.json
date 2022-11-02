@@ -21,8 +21,7 @@
         "kris/laravel-form-builder": "~1.7.0",
         "barryvdh/laravel-debugbar": "^2.2",
         "doctrine/dbal": "^2.5",
-        "intervention/image": "^2.3",
-        "ryanwinchester/hubspot-php": "^1.0"
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
