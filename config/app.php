@@ -162,7 +162,6 @@ return [
         Pimeo\Providers\ViewComposerServiceProvider::class,
         Pimeo\Providers\HtmlMacrosServiceProvider::class,
         Pimeo\Providers\ValidatorServiceProvider::class,
-        Pimeo\Providers\HubSpotServiceProvider::class,
 
         /*
          * Third Parties Service Providers...
